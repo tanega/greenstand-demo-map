@@ -5,7 +5,6 @@ import Map from "@/components/Map";
 import * as Locations from "@/locations/index";
 
 const MapPage: NextPage = () => {
-  console.log("Locations.freetown", Locations.usa);
   const [viewState, setViewState] = useState<ViewState>(Locations.freetown);
   const handleChangeViewState = ({ viewState, ...rest }) => {
     setViewState(viewState);
@@ -18,14 +17,7 @@ const MapPage: NextPage = () => {
       transitionDuration: 2000,
       transitionInterpolator: new FlyToInterpolator(),
     });
-  return (
-    <Map
-      height="100vh"
-      width="100vw"
-      viewState={viewState}
-      onViewStateChange={handleChangeViewState}
-    />
-  );
+  return <Map height="100vh" width="100vw" />;
 };
 
 export default MapPage;
