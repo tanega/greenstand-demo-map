@@ -1,5 +1,6 @@
-import { FC, useRef, useCallback, MutableRefObject, useState } from "react";
-import { ViewState, ViewportProps, StaticMap } from "react-map-gl";
+// @ts-nocheck
+import { FC, useRef, MutableRefObject, useState } from "react";
+import { ViewState, StaticMap } from "react-map-gl";
 import { DeckGL, MVTLayer } from "deck.gl";
 import { useToggle } from "react-use";
 import SidePopper from "@/components/SidePopper";
