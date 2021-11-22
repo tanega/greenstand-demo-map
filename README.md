@@ -1,21 +1,13 @@
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First install mapbox/mbview (https://github.com/mapbox/mbview); you will need a Mapbox Access Token:
-
-- `npm install -g @mapbox/mbview`
-
-Then serve Vector Tiles:
-
-- `cd public/tiles`
-- `export MAPBOX_ACCESS_TOKEN=your-token`
-- `mbview --port 4326 greenstand-freetown.mbtiles`
-
 Add your .env config file:
 
 - `cp .env.example .env.local`
-- Set your variables as needed.
+- Set your variables as needed, particularly your Mapbox token (support for `maplibre-gl` coming soon)
 
 Install project dependencies:
 
