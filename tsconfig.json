@@ -15,8 +15,8 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
-      // "mapbox-gl": ["maplibre-gl"]
+      "@/*": ["*"],
+      "mapbox-gl": ["maplibre-gl"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

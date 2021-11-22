@@ -11,7 +11,8 @@ export interface MapProps {
   width: string | number | undefined;
   height: string | number | undefined;
 }
-const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN || "";
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN;
+console.log(MAPBOX_TOKEN);
 
 const Map: FC<MapProps> = ({ width, height }) => {
   const deckRef = useRef() as MutableRefObject<DeckGL>;
@@ -23,7 +24,6 @@ const Map: FC<MapProps> = ({ width, height }) => {
   const [initialViewState, setInitialViewState] = useState(Locations.freetown);
 
   const handleOnViewStateChange = (e) => {
-    console.log(e);
     const { longitude, latitude, zoom } = e.viewState;
     setViewState(e.viewState);
   };

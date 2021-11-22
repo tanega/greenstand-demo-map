@@ -7,7 +7,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Add your .env config file:
 
 - `cp .env.example .env.local`
-- Set your variables as needed, particularly your Mapbox token (support for `maplibre-gl` coming soon)
+- Set your variables as needed, particularly your Mapbox token if you'd rather use `mapbox-gl` instead of `maplibre-gl`
 
 Install project dependencies:
 
