@@ -1,3 +1,4 @@
+//@ts-nocheck
 import type { NextPage } from "next";
 import { useState, Dispatch } from "react";
 import { FlyToInterpolator, ViewState, ViewportProps } from "react-map-gl";
